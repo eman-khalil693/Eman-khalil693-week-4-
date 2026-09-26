@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task Manager | Week 4</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>Task Manager</h1>
+            <p>JavaScript Task Management Application</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Add Task Section -->
+        <section class="task-form-section">
+
+            <h2>Add New Task</h2>
+
+            <form id="taskForm">
+
+                <div class="form-group">
+                    <label for="taskInput">Task</label>
+
+                    <input
+                        type="text"
+                        id="taskInput"
+                        placeholder="Enter your task..."
+                        autocomplete="off"
+                    >
+
+                    <small id="errorMessage" class="error-message"></small>
+                </div>
+
+                <button type="submit" class="btn primary-btn">
+                    Add Task
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Task Controls -->
+        <section class="controls-section">
+
+            <h2>My Tasks</h2>
+
+            <div class="filter-buttons">
+
+                <button
+                    type="button"
+                    class="filter-btn active"
+                    data-filter="all">
+                    All
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-btn"
+                    data-filter="active">
+                    Active
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-btn"
+                    data-filter="completed">
+                    Completed
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Task List -->
+        <section class="tasks-section">
+
+            <ul id="taskList" class="task-list"></ul>
+
+            <p id="emptyMessage" class="empty-message">
+                No tasks yet. Add your first task!
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                Week 4 Project — JavaScript Task Management Application
+            </p>
+
+            <p>
+                Built with HTML5, CSS3 and Vanilla JavaScript
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="scripts/main.js"></script>
+
+</body>
+  </html>
